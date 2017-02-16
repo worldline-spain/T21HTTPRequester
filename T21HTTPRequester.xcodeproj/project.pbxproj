@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D7D3F3D2E3BEC003A42E0A6 /* Pods_T21HTTPRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7380AFB9AE1F92A44510BE8 /* Pods_T21HTTPRequester.framework */; };
+		70B6E55EA5577BD1CA5ADF2F /* Pods_T21HTTPRequesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D5E1BA95F3F9080DD1F830 /* Pods_T21HTTPRequesterTests.framework */; };
+		B9CB22391E5609310041EA76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB22381E5609310041EA76 /* AppDelegate.swift */; };
+		B9CB223B1E5609310041EA76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB223A1E5609310041EA76 /* ViewController.swift */; };
+		B9CB223E1E5609310041EA76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB223C1E5609310041EA76 /* Main.storyboard */; };
+		B9CB22401E5609310041EA76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CB223F1E5609310041EA76 /* Assets.xcassets */; };
+		B9CB22431E5609310041EA76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB22411E5609310041EA76 /* LaunchScreen.storyboard */; };
+		B9CB224E1E5609310041EA76 /* T21HTTPRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB224D1E5609310041EA76 /* T21HTTPRequesterTests.swift */; };
+		B9CB225E1E560A140041EA76 /* HTTPGenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB22591E560A140041EA76 /* HTTPGenericService.swift */; };
+		B9CB225F1E560A140041EA76 /* HTTPRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB225A1E560A140041EA76 /* HTTPRequester.swift */; };
+		B9CB22601E560A140041EA76 /* HTTPRequesterLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB225B1E560A140041EA76 /* HTTPRequesterLogger.swift */; };
+		B9CB22611E560A140041EA76 /* HTTPRequesterLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB225C1E560A140041EA76 /* HTTPRequesterLoggerPlugin.swift */; };
+		B9CB22621E560A140041EA76 /* TargetTypeMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB225D1E560A140041EA76 /* TargetTypeMapping.swift */; };
+		B9CB22641E5615920041EA76 /* T21HTTPRequester.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B9CB22631E5615920041EA76 /* T21HTTPRequester.podspec */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9CB224A1E5609310041EA76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9CB222D1E5609310041EA76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9CB22341E5609310041EA76;
+			remoteInfo = T21HTTPRequester;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E0636DB3D27C7209B796B04 /* Pods-T21HTTPRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21HTTPRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-T21HTTPRequester/Pods-T21HTTPRequester.debug.xcconfig"; sourceTree = "<group>"; };
+		48D7EF1336221ED6879E0209 /* Pods-T21HTTPRequester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21HTTPRequester.release.xcconfig"; path = "Pods/Target Support Files/Pods-T21HTTPRequester/Pods-T21HTTPRequester.release.xcconfig"; sourceTree = "<group>"; };
+		A6D5E1BA95F3F9080DD1F830 /* Pods_T21HTTPRequesterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T21HTTPRequesterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9CB22351E5609310041EA76 /* T21HTTPRequester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T21HTTPRequester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9CB22381E5609310041EA76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9CB223A1E5609310041EA76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B9CB223D1E5609310041EA76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9CB223F1E5609310041EA76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9CB22421E5609310041EA76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9CB22441E5609310041EA76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9CB22491E5609310041EA76 /* T21HTTPRequesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = T21HTTPRequesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9CB224D1E5609310041EA76 /* T21HTTPRequesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T21HTTPRequesterTests.swift; sourceTree = "<group>"; };
+		B9CB224F1E5609310041EA76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9CB22591E560A140041EA76 /* HTTPGenericService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPGenericService.swift; sourceTree = "<group>"; };
+		B9CB225A1E560A140041EA76 /* HTTPRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequester.swift; sourceTree = "<group>"; };
+		B9CB225B1E560A140041EA76 /* HTTPRequesterLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequesterLogger.swift; sourceTree = "<group>"; };
+		B9CB225C1E560A140041EA76 /* HTTPRequesterLoggerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequesterLoggerPlugin.swift; sourceTree = "<group>"; };
+		B9CB225D1E560A140041EA76 /* TargetTypeMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetTypeMapping.swift; sourceTree = "<group>"; };
+		B9CB22631E5615920041EA76 /* T21HTTPRequester.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = T21HTTPRequester.podspec; sourceTree = "<group>"; };
+		C7380AFB9AE1F92A44510BE8 /* Pods_T21HTTPRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T21HTTPRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DC4835966DE1EAA8F2970C /* Pods-T21HTTPRequesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21HTTPRequesterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-T21HTTPRequesterTests/Pods-T21HTTPRequesterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA313143E7147977013F6483 /* Pods-T21HTTPRequesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21HTTPRequesterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-T21HTTPRequesterTests/Pods-T21HTTPRequesterTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9CB22321E5609310041EA76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7D3F3D2E3BEC003A42E0A6 /* Pods_T21HTTPRequester.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9CB22461E5609310041EA76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70B6E55EA5577BD1CA5ADF2F /* Pods_T21HTTPRequesterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ACA6B7310CB08F1CE091A20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E0636DB3D27C7209B796B04 /* Pods-T21HTTPRequester.debug.xcconfig */,
+				48D7EF1336221ED6879E0209 /* Pods-T21HTTPRequester.release.xcconfig */,
+				D9DC4835966DE1EAA8F2970C /* Pods-T21HTTPRequesterTests.debug.xcconfig */,
+				EA313143E7147977013F6483 /* Pods-T21HTTPRequesterTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9CB222C1E5609310041EA76 = {
+			isa = PBXGroup;
+			children = (
+				B9CB22631E5615920041EA76 /* T21HTTPRequester.podspec */,
+				B9CB22581E56099A0041EA76 /* src */,
+				B9CB22371E5609310041EA76 /* T21HTTPRequester */,
+				B9CB224C1E5609310041EA76 /* T21HTTPRequesterTests */,
+				B9CB22361E5609310041EA76 /* Products */,
+				4ACA6B7310CB08F1CE091A20 /* Pods */,
+				DC08EA35BBF70DD1125D8B93 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9CB22361E5609310041EA76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9CB22351E5609310041EA76 /* T21HTTPRequester.app */,
+				B9CB22491E5609310041EA76 /* T21HTTPRequesterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9CB22371E5609310041EA76 /* T21HTTPRequester */ = {
+			isa = PBXGroup;
+			children = (
+				B9CB22381E5609310041EA76 /* AppDelegate.swift */,
+				B9CB223A1E5609310041EA76 /* ViewController.swift */,
+				B9CB223C1E5609310041EA76 /* Main.storyboard */,
+				B9CB223F1E5609310041EA76 /* Assets.xcassets */,
+				B9CB22411E5609310041EA76 /* LaunchScreen.storyboard */,
+				B9CB22441E5609310041EA76 /* Info.plist */,
+			);
+			path = T21HTTPRequester;
+			sourceTree = "<group>";
+		};
+		B9CB224C1E5609310041EA76 /* T21HTTPRequesterTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9CB224D1E5609310041EA76 /* T21HTTPRequesterTests.swift */,
+				B9CB224F1E5609310041EA76 /* Info.plist */,
+			);
+			path = T21HTTPRequesterTests;
+			sourceTree = "<group>";
+		};
+		B9CB22581E56099A0041EA76 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B9CB22591E560A140041EA76 /* HTTPGenericService.swift */,
+				B9CB225A1E560A140041EA76 /* HTTPRequester.swift */,
+				B9CB225B1E560A140041EA76 /* HTTPRequesterLogger.swift */,
+				B9CB225C1E560A140041EA76 /* HTTPRequesterLoggerPlugin.swift */,
+				B9CB225D1E560A140041EA76 /* TargetTypeMapping.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		DC08EA35BBF70DD1125D8B93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7380AFB9AE1F92A44510BE8 /* Pods_T21HTTPRequester.framework */,
+				A6D5E1BA95F3F9080DD1F830 /* Pods_T21HTTPRequesterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9CB22341E5609310041EA76 /* T21HTTPRequester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9CB22521E5609310041EA76 /* Build configuration list for PBXNativeTarget "T21HTTPRequester" */;
+			buildPhases = (
+				5D95C5A55DB493332611708F /* [CP] Check Pods Manifest.lock */,
+				B9CB22311E5609310041EA76 /* Sources */,
+				B9CB22321E5609310041EA76 /* Frameworks */,
+				B9CB22331E5609310041EA76 /* Resources */,
+				2DDEC33CE6353516C102E2BE /* [CP] Embed Pods Frameworks */,
+				9874605CA0CB5F72088341CB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = T21HTTPRequester;
+			productName = T21HTTPRequester;
+			productReference = B9CB22351E5609310041EA76 /* T21HTTPRequester.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9CB22481E5609310041EA76 /* T21HTTPRequesterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9CB22551E5609310041EA76 /* Build configuration list for PBXNativeTarget "T21HTTPRequesterTests" */;
+			buildPhases = (
+				79683B48D91A2C81A09DDDB8 /* [CP] Check Pods Manifest.lock */,
+				B9CB22451E5609310041EA76 /* Sources */,
+				B9CB22461E5609310041EA76 /* Frameworks */,
+				B9CB22471E5609310041EA76 /* Resources */,
+				78ECA73ABB4AA4F339120D86 /* [CP] Embed Pods Frameworks */,
+				E43B38A891BEC84C4620FDB5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9CB224B1E5609310041EA76 /* PBXTargetDependency */,
+			);
+			name = T21HTTPRequesterTests;
+			productName = T21HTTPRequesterTests;
+			productReference = B9CB22491E5609310041EA76 /* T21HTTPRequesterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9CB222D1E5609310041EA76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Worldline;
+				TargetAttributes = {
+					B9CB22341E5609310041EA76 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C2UZU6ZLJE;
+						ProvisioningStyle = Automatic;
+					};
+					B9CB22481E5609310041EA76 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C2UZU6ZLJE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B9CB22341E5609310041EA76;
+					};
+				};
+			};
+			buildConfigurationList = B9CB22301E5609310041EA76 /* Build configuration list for PBXProject "T21HTTPRequester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9CB222C1E5609310041EA76;
+			productRefGroup = B9CB22361E5609310041EA76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9CB22341E5609310041EA76 /* T21HTTPRequester */,
+				B9CB22481E5609310041EA76 /* T21HTTPRequesterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9CB22331E5609310041EA76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CB22431E5609310041EA76 /* LaunchScreen.storyboard in Resources */,
+				B9CB22401E5609310041EA76 /* Assets.xcassets in Resources */,
+				B9CB223E1E5609310041EA76 /* Main.storyboard in Resources */,
+				B9CB22641E5615920041EA76 /* T21HTTPRequester.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9CB22471E5609310041EA76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DDEC33CE6353516C102E2BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-T21HTTPRequester/Pods-T21HTTPRequester-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D95C5A55DB493332611708F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78ECA73ABB4AA4F339120D86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-T21HTTPRequesterTests/Pods-T21HTTPRequesterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79683B48D91A2C81A09DDDB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9874605CA0CB5F72088341CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-T21HTTPRequester/Pods-T21HTTPRequester-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E43B38A891BEC84C4620FDB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-T21HTTPRequesterTests/Pods-T21HTTPRequesterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9CB22311E5609310041EA76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CB223B1E5609310041EA76 /* ViewController.swift in Sources */,
+				B9CB22611E560A140041EA76 /* HTTPRequesterLoggerPlugin.swift in Sources */,
+				B9CB22391E5609310041EA76 /* AppDelegate.swift in Sources */,
+				B9CB22621E560A140041EA76 /* TargetTypeMapping.swift in Sources */,
+				B9CB225F1E560A140041EA76 /* HTTPRequester.swift in Sources */,
+				B9CB22601E560A140041EA76 /* HTTPRequesterLogger.swift in Sources */,
+				B9CB225E1E560A140041EA76 /* HTTPGenericService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9CB22451E5609310041EA76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CB224E1E5609310041EA76 /* T21HTTPRequesterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9CB224B1E5609310041EA76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9CB22341E5609310041EA76 /* T21HTTPRequester */;
+			targetProxy = B9CB224A1E5609310041EA76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9CB223C1E5609310041EA76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9CB223D1E5609310041EA76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9CB22411E5609310041EA76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9CB22421E5609310041EA76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9CB22501E5609310041EA76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9CB22511E5609310041EA76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9CB22531E5609310041EA76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0636DB3D27C7209B796B04 /* Pods-T21HTTPRequester.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2UZU6ZLJE;
+				INFOPLIST_FILE = T21HTTPRequester/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempos21.T21HTTPRequester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B9CB22541E5609310041EA76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48D7EF1336221ED6879E0209 /* Pods-T21HTTPRequester.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2UZU6ZLJE;
+				INFOPLIST_FILE = T21HTTPRequester/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempos21.T21HTTPRequester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B9CB22561E5609310041EA76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9DC4835966DE1EAA8F2970C /* Pods-T21HTTPRequesterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C2UZU6ZLJE;
+				INFOPLIST_FILE = T21HTTPRequesterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempos21.T21HTTPRequesterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/T21HTTPRequester.app/T21HTTPRequester";
+			};
+			name = Debug;
+		};
+		B9CB22571E5609310041EA76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA313143E7147977013F6483 /* Pods-T21HTTPRequesterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C2UZU6ZLJE;
+				INFOPLIST_FILE = T21HTTPRequesterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempos21.T21HTTPRequesterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/T21HTTPRequester.app/T21HTTPRequester";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9CB22301E5609310041EA76 /* Build configuration list for PBXProject "T21HTTPRequester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9CB22501E5609310041EA76 /* Debug */,
+				B9CB22511E5609310041EA76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9CB22521E5609310041EA76 /* Build configuration list for PBXNativeTarget "T21HTTPRequester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9CB22531E5609310041EA76 /* Debug */,
+				B9CB22541E5609310041EA76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9CB22551E5609310041EA76 /* Build configuration list for PBXNativeTarget "T21HTTPRequesterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9CB22561E5609310041EA76 /* Debug */,
+				B9CB22571E5609310041EA76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9CB222D1E5609310041EA76 /* Project object */;
+}
