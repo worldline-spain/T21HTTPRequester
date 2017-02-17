@@ -8,7 +8,6 @@
 
 import Foundation
 import Moya
-import Result
 
 public final class HTTPRequesterLoggerPlugin: PluginType {
     
@@ -44,7 +43,7 @@ public final class HTTPRequesterLoggerPlugin: PluginType {
         outputItems(logNetworkRequest(request.request as URLRequest?), .standard)
     }
     
-    public func didReceive(_ result: Result<Moya.Response, MoyaError>, target: TargetType) {
+    public func didReceive(_ result: HTTPRequesterResult<Moya.Response, MoyaError>, target: TargetType) {
         if case .success(let response) = result {
             var logType = LogType.standard
             if response.statusCode >= 500 {

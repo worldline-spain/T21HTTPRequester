@@ -21,6 +21,7 @@
 		B9CB22611E560A140041EA76 /* HTTPRequesterLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB225C1E560A140041EA76 /* HTTPRequesterLoggerPlugin.swift */; };
 		B9CB22621E560A140041EA76 /* TargetTypeMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB225D1E560A140041EA76 /* TargetTypeMapping.swift */; };
 		B9CB22641E5615920041EA76 /* T21HTTPRequester.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B9CB22631E5615920041EA76 /* T21HTTPRequester.podspec */; };
+		B9CB22661E56EF5F0041EA76 /* HTTPRequesterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB22651E56EF5F0041EA76 /* HTTPRequesterResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B9CB225C1E560A140041EA76 /* HTTPRequesterLoggerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequesterLoggerPlugin.swift; sourceTree = "<group>"; };
 		B9CB225D1E560A140041EA76 /* TargetTypeMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetTypeMapping.swift; sourceTree = "<group>"; };
 		B9CB22631E5615920041EA76 /* T21HTTPRequester.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = T21HTTPRequester.podspec; sourceTree = "<group>"; };
+		B9CB22651E56EF5F0041EA76 /* HTTPRequesterResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequesterResult.swift; sourceTree = "<group>"; };
 		C7380AFB9AE1F92A44510BE8 /* Pods_T21HTTPRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T21HTTPRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DC4835966DE1EAA8F2970C /* Pods-T21HTTPRequesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21HTTPRequesterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-T21HTTPRequesterTests/Pods-T21HTTPRequesterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA313143E7147977013F6483 /* Pods-T21HTTPRequesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21HTTPRequesterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-T21HTTPRequesterTests/Pods-T21HTTPRequesterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				B9CB225A1E560A140041EA76 /* HTTPRequester.swift */,
 				B9CB225B1E560A140041EA76 /* HTTPRequesterLogger.swift */,
 				B9CB225C1E560A140041EA76 /* HTTPRequesterLoggerPlugin.swift */,
+				B9CB22651E56EF5F0041EA76 /* HTTPRequesterResult.swift */,
 				B9CB225D1E560A140041EA76 /* TargetTypeMapping.swift */,
 			);
 			path = src;
@@ -362,6 +365,7 @@
 				B9CB223B1E5609310041EA76 /* ViewController.swift in Sources */,
 				B9CB22611E560A140041EA76 /* HTTPRequesterLoggerPlugin.swift in Sources */,
 				B9CB22391E5609310041EA76 /* AppDelegate.swift in Sources */,
+				B9CB22661E56EF5F0041EA76 /* HTTPRequesterResult.swift in Sources */,
 				B9CB22621E560A140041EA76 /* TargetTypeMapping.swift in Sources */,
 				B9CB225F1E560A140041EA76 /* HTTPRequester.swift in Sources */,
 				B9CB22601E560A140041EA76 /* HTTPRequesterLogger.swift in Sources */,

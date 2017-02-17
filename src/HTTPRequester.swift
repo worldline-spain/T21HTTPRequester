@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import Result
 import Moya
 import T21Mapping
 
 public protocol HTTPRequesterProtocol {
     func request<RequestType>( _ service : RequestType, _ completion: @escaping (_ response: RequestType.T) -> (Void) ) where RequestType : TargetType, RequestType : TargetTypeMapping
-    func requestSimple( _ service : TargetType, _ completion: @escaping (_ response: Result<Moya.Response, MoyaError>) -> Void)
+    func requestSimple( _ service : TargetType, _ completion: @escaping (_ response: HTTPRequesterResult<Moya.Response, MoyaError>) -> Void)
 }
 
 public class HTTPRequester : HTTPRequesterProtocol {
@@ -32,7 +31,7 @@ public class HTTPRequester : HTTPRequesterProtocol {
         let currentQueue = OperationQueue.current!
         provider.request(MultiTarget(service), completion: { (result) in
             q.addOperation({
-                let mapping: Mapping<Result<Moya.Response, MoyaError>,RequestType.T> = service.mapping
+                let mapping: Mapping<HTTPRequesterResult<Moya.Response, MoyaError>,RequestType.T> = service.mapping
                 let response: RequestType.T = mapping.map(result)
                 currentQueue.addOperation({
                     completion(response)
@@ -41,7 +40,7 @@ public class HTTPRequester : HTTPRequesterProtocol {
         })
     }
     
-    public func requestSimple( _ service : TargetType, _ completion: @escaping (_ response: Result<Moya.Response, MoyaError>) -> Void){
+    public func requestSimple( _ service : TargetType, _ completion: @escaping (_ response: HTTPRequesterResult<Moya.Response, MoyaError>) -> Void){
         provider.request(MultiTarget(service), completion: { (result) in
             completion(result)
         })

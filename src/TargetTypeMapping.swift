@@ -8,10 +8,9 @@
 
 import Foundation
 import Moya
-import Result
 import T21Mapping
 
 public protocol TargetTypeMapping {
     associatedtype T
-    var mapping: Mapping<Result<Moya.Response, MoyaError>,T> { get }
+    var mapping: Mapping<HTTPRequesterResult<Moya.Response, MoyaError>,T> { get }
 }
