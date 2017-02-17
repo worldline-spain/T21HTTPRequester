@@ -9,6 +9,7 @@
 import Foundation
 import Moya
 import T21Mapping
+import Alamofire
 
 public class HTTPGenericService<ResponseType> : TargetType,TargetTypeMapping {
     
