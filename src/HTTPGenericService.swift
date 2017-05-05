@@ -20,13 +20,13 @@ public class HTTPGenericService<ResponseType> : TargetType,TargetTypeMapping {
     let m_parameterEncoding: ParameterEncoding
     let m_sampleData: Data
     let m_task: Task
-    var m_mapping: Mapping<HTTPRequesterResult<Moya.Response, MoyaError>,ResponseType> = Mapping({ _ in return ("" as! ResponseType) })
+    var m_mapping: MoyaMapping<ResponseType> = Mapping({ _ in return ("" as! ResponseType) })
     
     public init(_ baseURL: URL,
                 _ path: String,
                 _ method: Moya.Method = .get,
                 _ parameters: [String: Any]? = nil,
-                _ mapping: Mapping<HTTPRequesterResult<Moya.Response, MoyaError>,ResponseType> = Mapping({ _ in return ("" as! ResponseType) }),
+                _ mapping: MoyaMapping<ResponseType> = Mapping({ _ in return ("" as! ResponseType) }),
                 _ parameterEncoding: ParameterEncoding = URLEncoding.default,
                 _ task: Task = .request,
                 _ sampleData: Data = "Sample data".utf8Encoded) {
@@ -44,7 +44,7 @@ public class HTTPGenericService<ResponseType> : TargetType,TargetTypeMapping {
                             _ path: String,
                             _ method: Moya.Method,
                             _ parameters: [String: Any]?,
-                            _ mapping: Mapping<HTTPRequesterResult<Moya.Response, MoyaError>,ResponseType>) {
+                            _ mapping: MoyaMapping<ResponseType>) {
         self.init(baseURL,path,method,parameters,mapping)
     }
     
@@ -55,7 +55,7 @@ public class HTTPGenericService<ResponseType> : TargetType,TargetTypeMapping {
         self.init(baseURL,path,method,parameters)
     }
     
-    public func setMapping(_ mapping: Mapping<HTTPRequesterResult<Moya.Response, MoyaError>,ResponseType>) {
+    public func setMapping(_ mapping: MoyaMapping<ResponseType>) {
         m_mapping = mapping
     }
     
@@ -73,7 +73,7 @@ public class HTTPGenericService<ResponseType> : TargetType,TargetTypeMapping {
     
     public var task: Task { return m_task }
     
-    public var mapping: Mapping<HTTPRequesterResult<Moya.Response, MoyaError>,ResponseType> { return m_mapping }
+    public var mapping: MoyaMapping<ResponseType> { return m_mapping }
 }
 
 extension String {
