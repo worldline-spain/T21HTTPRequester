@@ -31,7 +31,7 @@ public class HTTPRequester : HTTPRequesterProtocol {
         let currentQueue = OperationQueue.current!
         provider.request(MultiTarget(service), completion: { (result) in
             q.addOperation({
-                let mapping: Mapping<HTTPRequesterResult<Moya.Response, MoyaError>,RequestType.T> = service.mapping
+                let mapping: MoyaMapping<RequestType.T> = service.mapping
                 let response: RequestType.T = mapping.map(result)
                 currentQueue.addOperation({
                     completion(response)
