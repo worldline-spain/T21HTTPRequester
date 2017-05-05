@@ -1,4 +1,4 @@
-#T21HTTPRequester
+# T21HTTPRequester
 
 ## Version 1.0.0
 
@@ -10,7 +10,7 @@ The requester adds an extra feature which resolves each endpoint (service) with 
 
 There two different options available to configure an API service/endpoint.
 
-##### Implementing the protocols TargetType & TargetTypeMapping
+#### Implementing the protocols TargetType & TargetTypeMapping
 
 Each endpoint must implement these two protocols: 
 
@@ -138,7 +138,7 @@ class LoginService : BaseService<GetLoginResponseType> {
 Theoretically the Moya library uses an enum approach in order to define several services, but this leads to big enum types that grow each time a new service is added. Also, when using an **enum type** it's **not possible to define an specific response type** for each different enum type (each different endpoint).
 
 
-##### Using the HTTPGenericService class
+#### Using the HTTPGenericService class
 
 The HTTPGenericService class offers the possibility of creating a generic instance of any kind of service. All the needed parameters are sent when constructing the specific new instance.
 
@@ -240,7 +240,7 @@ and
 public func requestSimple( _ service : TargetType, _ completion: @escaping (_ response: HTTPRequesterResult<Moya.Response, MoyaError>) -> Void)
 ```
 
-##### The first one
+#### The first one
 
 The `service` parameter expects an instance which implements the TargetType and TargetTypeMapping protocols (check the document section **Configuring a service endpoint**).
 
@@ -274,7 +274,7 @@ public enum GetFilmsResponseType {
 As you can see, with this representation the client is not leaving any possible unmanaged path. All the possible response are grouped in this enum response type. This will help avoiding uncontrolled inputs in our app.
 
 
-##### The second one
+#### The second one
 
 The `service` parameter expects an instance which implements only TargetType protocol (not the TargetTypeMapping). That means, no mapping will be used.
 
