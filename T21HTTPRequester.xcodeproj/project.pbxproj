@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D7D3F3D2E3BEC003A42E0A6 /* Pods_T21HTTPRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7380AFB9AE1F92A44510BE8 /* Pods_T21HTTPRequester.framework */; };
 		70B6E55EA5577BD1CA5ADF2F /* Pods_T21HTTPRequesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D5E1BA95F3F9080DD1F830 /* Pods_T21HTTPRequesterTests.framework */; };
+		B90B3A101EC47E1200B19563 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B3A0F1EC47E1200B19563 /* HTTPService.swift */; };
 		B9CB22391E5609310041EA76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB22381E5609310041EA76 /* AppDelegate.swift */; };
 		B9CB223B1E5609310041EA76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB223A1E5609310041EA76 /* ViewController.swift */; };
 		B9CB223E1E5609310041EA76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CB223C1E5609310041EA76 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		2E0636DB3D27C7209B796B04 /* Pods-T21HTTPRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21HTTPRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-T21HTTPRequester/Pods-T21HTTPRequester.debug.xcconfig"; sourceTree = "<group>"; };
 		48D7EF1336221ED6879E0209 /* Pods-T21HTTPRequester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21HTTPRequester.release.xcconfig"; path = "Pods/Target Support Files/Pods-T21HTTPRequester/Pods-T21HTTPRequester.release.xcconfig"; sourceTree = "<group>"; };
 		A6D5E1BA95F3F9080DD1F830 /* Pods_T21HTTPRequesterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T21HTTPRequesterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90B3A0F1EC47E1200B19563 /* HTTPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 		B9CB22351E5609310041EA76 /* T21HTTPRequester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T21HTTPRequester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CB22381E5609310041EA76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9CB223A1E5609310041EA76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				B9CB225C1E560A140041EA76 /* HTTPRequesterLoggerPlugin.swift */,
 				B9CB22651E56EF5F0041EA76 /* HTTPRequesterResult.swift */,
 				B9CB225D1E560A140041EA76 /* TargetTypeMapping.swift */,
+				B90B3A0F1EC47E1200B19563 /* HTTPService.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				B9CB22661E56EF5F0041EA76 /* HTTPRequesterResult.swift in Sources */,
 				B9CB22621E560A140041EA76 /* TargetTypeMapping.swift in Sources */,
 				B9CB225F1E560A140041EA76 /* HTTPRequester.swift in Sources */,
+				B90B3A101EC47E1200B19563 /* HTTPService.swift in Sources */,
 				B9CB22601E560A140041EA76 /* HTTPRequesterLogger.swift in Sources */,
 				B9CB225E1E560A140041EA76 /* HTTPGenericService.swift in Sources */,
 			);
