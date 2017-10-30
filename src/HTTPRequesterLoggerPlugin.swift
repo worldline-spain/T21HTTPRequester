@@ -121,7 +121,7 @@ private extension HTTPRequesterLoggerPlugin {
     }
 }
 
-fileprivate extension HTTPRequesterLoggerPlugin {
+ public extension HTTPRequesterLoggerPlugin {
     static func print(seperator: String, terminator: String, items: [String], error: LogType = .standard) {
         let log = items.reduce("", { (prev, item) in
             return "\(prev)\(seperator)\(item)"})

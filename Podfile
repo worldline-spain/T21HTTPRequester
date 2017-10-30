@@ -1,4 +1,4 @@
-platform :ios, "8.0"
+platform :ios, "9.0"
 use_frameworks!
 
 #sources
@@ -10,7 +10,7 @@ workspace 'T21HTTPRequester'
 project 'T21HTTPRequester'
 
 target 'T21HTTPRequester' do
-    pod 'Moya'
+    pod 'Moya', '~> 9.0'
     pod 'T21LoggerSwift'
     pod 'T21Mapping'
 end
@@ -22,7 +22,7 @@ post_install do |installer|
     installer.pods_project.targets.each do |target|
         
         target.build_configurations.each do |config|
-            config.build_settings['SWIFT_VERSION'] = '3.0'
+            config.build_settings['SWIFT_VERSION'] = '4.0'
             if config.name == 'devel' || config.name == 'Debug'
                 config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)', 'DEBUG=1']
                 config.build_settings['OTHER_SWIFT_FLAGS'] ||= ['$(inherited)','-DDEBUG']
