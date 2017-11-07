@@ -22,13 +22,15 @@ public class HTTPService : TargetType {
     let m_parameterEncoding: ParameterEncoding
     let m_sampleData: Data
     let m_task: Task
+    let m_headers: [String: String]?
     
     public init(_ baseURL: URL,
                 _ path: String,
                 _ method: Moya.Method = .get,
                 _ parameters: [String: Any]? = nil,
                 _ parameterEncoding: ParameterEncoding = URLEncoding.default,
-                _ task: Task = .request,
+                _ task: Task = .requestPlain,
+                _ headers: [String: String]? = nil,
                 _ sampleData: Data = "Sample data".utf8Encoded) {
         m_baseURL = baseURL
         m_path = path
@@ -37,13 +39,15 @@ public class HTTPService : TargetType {
         m_parameterEncoding = parameterEncoding
         m_sampleData = sampleData
         m_task = task
+        m_headers = headers
     }
     
     public convenience init(_ baseURL: URL,
                             _ path: String,
                             _ method: Moya.Method,
-                            _ parameters: [String: Any]?) {
-        self.init(baseURL,path,method,parameters,URLEncoding.default,.request,"Sample data".utf8Encoded)
+                            _ parameters: [String: Any]?,
+                            _ headers: [String: String]?) {
+        self.init(baseURL,path,method,parameters,URLEncoding.default,.requestPlain,headers,"Sample data".utf8Encoded)
     }
     
     public var baseURL: URL { return m_baseURL }
@@ -59,6 +63,8 @@ public class HTTPService : TargetType {
     public var sampleData: Data { return m_sampleData }
     
     public var task: Task { return m_task }
+    
+    public var headers: [String: String]? { return m_headers }
 }
 
 extension String {
