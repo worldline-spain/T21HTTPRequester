@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D7D3F3D2E3BEC003A42E0A6 /* Pods_T21HTTPRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7380AFB9AE1F92A44510BE8 /* Pods_T21HTTPRequester.framework */; };
-		70B6E55EA5577BD1CA5ADF2F /* Pods_T21HTTPRequesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D5E1BA95F3F9080DD1F830 /* Pods_T21HTTPRequesterTests.framework */; };
 		B90B3A101EC47E1200B19563 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90B3A0F1EC47E1200B19563 /* HTTPService.swift */; };
 		B9CB22391E5609310041EA76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB22381E5609310041EA76 /* AppDelegate.swift */; };
 		B9CB223B1E5609310041EA76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB223A1E5609310041EA76 /* ViewController.swift */; };
@@ -36,9 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E0636DB3D27C7209B796B04 /* Pods-T21HTTPRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21HTTPRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-T21HTTPRequester/Pods-T21HTTPRequester.debug.xcconfig"; sourceTree = "<group>"; };
-		48D7EF1336221ED6879E0209 /* Pods-T21HTTPRequester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21HTTPRequester.release.xcconfig"; path = "Pods/Target Support Files/Pods-T21HTTPRequester/Pods-T21HTTPRequester.release.xcconfig"; sourceTree = "<group>"; };
-		A6D5E1BA95F3F9080DD1F830 /* Pods_T21HTTPRequesterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T21HTTPRequesterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90B3A0F1EC47E1200B19563 /* HTTPService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 		B9CB22351E5609310041EA76 /* T21HTTPRequester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T21HTTPRequester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CB22381E5609310041EA76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,9 +52,6 @@
 		B9CB225D1E560A140041EA76 /* TargetTypeMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetTypeMapping.swift; sourceTree = "<group>"; };
 		B9CB22631E5615920041EA76 /* T21HTTPRequester.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = T21HTTPRequester.podspec; sourceTree = "<group>"; };
 		B9CB22651E56EF5F0041EA76 /* HTTPRequesterResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequesterResult.swift; sourceTree = "<group>"; };
-		C7380AFB9AE1F92A44510BE8 /* Pods_T21HTTPRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T21HTTPRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9DC4835966DE1EAA8F2970C /* Pods-T21HTTPRequesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21HTTPRequesterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-T21HTTPRequesterTests/Pods-T21HTTPRequesterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		EA313143E7147977013F6483 /* Pods-T21HTTPRequesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21HTTPRequesterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-T21HTTPRequesterTests/Pods-T21HTTPRequesterTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D7D3F3D2E3BEC003A42E0A6 /* Pods_T21HTTPRequester.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,24 +66,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70B6E55EA5577BD1CA5ADF2F /* Pods_T21HTTPRequesterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4ACA6B7310CB08F1CE091A20 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2E0636DB3D27C7209B796B04 /* Pods-T21HTTPRequester.debug.xcconfig */,
-				48D7EF1336221ED6879E0209 /* Pods-T21HTTPRequester.release.xcconfig */,
-				D9DC4835966DE1EAA8F2970C /* Pods-T21HTTPRequesterTests.debug.xcconfig */,
-				EA313143E7147977013F6483 /* Pods-T21HTTPRequesterTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		B9CB222C1E5609310041EA76 = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +80,6 @@
 				B9CB22371E5609310041EA76 /* T21HTTPRequester */,
 				B9CB224C1E5609310041EA76 /* T21HTTPRequesterTests */,
 				B9CB22361E5609310041EA76 /* Products */,
-				4ACA6B7310CB08F1CE091A20 /* Pods */,
-				DC08EA35BBF70DD1125D8B93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,15 +128,6 @@
 			path = src;
 			sourceTree = "<group>";
 		};
-		DC08EA35BBF70DD1125D8B93 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C7380AFB9AE1F92A44510BE8 /* Pods_T21HTTPRequester.framework */,
-				A6D5E1BA95F3F9080DD1F830 /* Pods_T21HTTPRequesterTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,11 +135,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9CB22521E5609310041EA76 /* Build configuration list for PBXNativeTarget "T21HTTPRequester" */;
 			buildPhases = (
-				5D95C5A55DB493332611708F /* [CP] Check Pods Manifest.lock */,
 				B9CB22311E5609310041EA76 /* Sources */,
 				B9CB22321E5609310041EA76 /* Frameworks */,
 				B9CB22331E5609310041EA76 /* Resources */,
-				2DDEC33CE6353516C102E2BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,7 +152,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9CB22551E5609310041EA76 /* Build configuration list for PBXNativeTarget "T21HTTPRequesterTests" */;
 			buildPhases = (
-				79683B48D91A2C81A09DDDB8 /* [CP] Check Pods Manifest.lock */,
 				B9CB22451E5609310041EA76 /* Sources */,
 				B9CB22461E5609310041EA76 /* Frameworks */,
 				B9CB22471E5609310041EA76 /* Resources */,
@@ -208,7 +173,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Worldline;
 				TargetAttributes = {
 					B9CB22341E5609310041EA76 = {
@@ -226,7 +191,7 @@
 			};
 			buildConfigurationList = B9CB22301E5609310041EA76 /* Build configuration list for PBXProject "T21HTTPRequester" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -263,73 +228,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2DDEC33CE6353516C102E2BE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-T21HTTPRequester/Pods-T21HTTPRequester-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
-				"${BUILT_PRODUCTS_DIR}/T21LoggerSwift/T21LoggerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/T21Mapping/T21Mapping.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/T21LoggerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/T21Mapping.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-T21HTTPRequester/Pods-T21HTTPRequester-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5D95C5A55DB493332611708F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-T21HTTPRequester-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		79683B48D91A2C81A09DDDB8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-T21HTTPRequesterTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B9CB22311E5609310041EA76 /* Sources */ = {
@@ -499,7 +397,6 @@
 		};
 		B9CB22531E5609310041EA76 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E0636DB3D27C7209B796B04 /* Pods-T21HTTPRequester.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -514,7 +411,6 @@
 		};
 		B9CB22541E5609310041EA76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48D7EF1336221ED6879E0209 /* Pods-T21HTTPRequester.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -529,7 +425,6 @@
 		};
 		B9CB22561E5609310041EA76 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9DC4835966DE1EAA8F2970C /* Pods-T21HTTPRequesterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -545,7 +440,6 @@
 		};
 		B9CB22571E5609310041EA76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA313143E7147977013F6483 /* Pods-T21HTTPRequesterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
